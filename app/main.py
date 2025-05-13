@@ -8,10 +8,10 @@ class Animal:
         self.name = name
         self.health = health
         self.hidden = hidden
-        self.alive = True
+        self.is_alive = True
         Animal.alive.append(self)
 
-    def __repr__(self) -> None:
+    def __repr__(self) -> str:
         return(f"{{Name: {self.name}, Health: {self.health}, " 
                f"Hidden: {self.hidden}}}")
 
